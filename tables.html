@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tables and Lists</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tables.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Latest Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Standings</a>
+                        <ul>
+                            <li>
+                                <a href="#">Eastern Conference</a>
+                            </li>
+                            <li>
+                                <a href="#">Western Conference</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+    </header>
+    <div id="wrapper">
+        
+        <table>
+            <tr>
+                <th>Spot</th>
+                <th>Team</th>
+                <th>G</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>Scores</th>
+                <th>Points</th>
+                <th colspan="5">Latest Games</th>
+            </tr>
+            <tr>
+                    <td>1</td>
+                    <td>TeamA</td>
+                    <td>15</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>45:19</td>
+                    <td>23</td>
+                    <td colspan="3" class="win">W</td>
+                    <td class="draw">D</td>
+                    <td class="win">W</td>
+
+            </tr>
+            <tr>
+                    <td>2</td>
+                    <td>Teamb</td>
+                    <td>15</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>4</td>
+                    <td>25:19</td>
+                    <td>13</td>
+                    <td colspan="2" class="win">W</td>
+                    <td class="draw">D</td>
+                    <td class="loss">L</td>
+                    <td class="win">W</td>
+            </tr>
+            <tr>
+                    <td>3</td>
+                    <td>TeamC</td>
+                    <td>16</td>
+                    <td>10</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>50:19</td>
+                    <td>39</td>
+                    <td colspan="2" class="loss">L</td>
+                    <td colspan="3" class="win">W</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>TeamD</td>
+                <td>15</td>
+                <td>10</td>
+                <td>0</td>
+                <td>5</td>
+                <td>45:29</td>
+                <td>24</td>
+                <td class="win">W</td>
+                <td class="draw">D</td>
+                <td class="loss">L</td>
+                <td colspan="2" class="win">W</td>
+
+            </tr>
+        </table>
+
+        <table id="timetable">
+             <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+             </tr>
+            <tr id="MO">
+                <td>MON</td>
+                <td>Eng</td>
+                <td>Math</td>
+                <td>Sports</td>
+                <td>FR</td>
+                <td>
+                    <table class="no-border">
+                        <tr>
+                            <td>Chem</td>
+                            <td>Biology</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr id="TU">
+                <td>TUES</td>
+                <td>Eng</td>
+                <td>FR</td>
+                <td>Math</td>
+                <td colspan="2">Informatics</td>
+            </tr>
+        </table>
+        <div class="lists">
+            <h3>Drinks on our party</h3>
+            <ul>
+                <li>Beer</li>
+                <li>Wine</li>
+                <li>Vodka</li>
+                <li>Captain Morgan</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Programming languages we know</h3>
+            <ol start="3">
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+                <li>php</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

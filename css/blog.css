@@ -1,0 +1,318 @@
+body{
+    margin:0;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    background: red;
+    text-align: center;
+    font-size: 64px;
+    line-height: 100px;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius:50px;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    display: table;
+    height: 100px;
+}
+
+nav ul{
+    /* float: left; */
+    display: table-cell;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0 0 0 50px;
+}
+
+nav ul li{
+    float: left;
+    padding: 20px;
+}
+
+#content{
+    width: 980px;
+    margin: 0 auto;
+}
+
+header{
+    background: lightskyblue;
+    padding: 20px 0;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#main{
+    background: bisque;
+    
+}
+
+.articles img{
+    width: 300px;
+}
+
+#main{
+    background: bisque;
+    padding: 40px 0;
+}
+
+#main .articles{
+    width: 650px;
+    float: left;
+    
+}
+
+#main .sidebar{
+    float: right;
+    background: white;
+    min-height: 100px;
+    width: 260px;
+    padding: 20px;
+
+}
+
+#main .articles #excerpt{
+    float: right;
+    width: 300px;
+}
+
+#main .articles .bottom > div{
+    float: left;
+    padding: 0 20px;
+}
+
+#main .articles .bottom{
+    border-top:1px solid #999;
+    padding: 20px 0;
+    color: #999;
+    float: left;
+    width: 100%;
+}
+
+#main .articles .bottom .views{
+    float: right;
+}
+
+#main article .inner{
+    padding: 20px ;
+}
+
+#main .articles .inner h2{
+    margin: 0 0 10px 0;
+}
+
+article{
+    margin-bottom:20px;
+    background: white;
+}
+
+#main .sidebar input{
+    padding: 10px;
+    width: 220px;
+    padding-right: 30px;
+    border: 1px solid #ddd;
+}
+
+#main .sidebar input[type=submit]{
+    background: #ddd;
+    /* text-indent: -999px; */
+    width: 25px;
+    height: 25px;
+    border: none;
+    padding: 0; 
+    position: absolute;
+    top:5px;
+    right: 0;
+
+}
+
+#main .sidebar form{
+    position: relative;
+}
+
+#main .sidebar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main .sidebar a{
+    color: #158ebf; 
+}
+
+#main .sidebar ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+#main .sidebar ul li:last-child{
+    border: none;
+}
+
+#main .sidebar h3{
+    margin: 40px 0 20px;
+}
+
+footer{
+    width: 980px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#copyright{
+    float: left;
+    width: 200px;
+
+}
+
+/* Below are css 
+for posts.html */
+
+
+#main .single-post{
+    width: 610px;
+    float: left;
+    background: white;
+    padding: 20px;
+}
+
+#main .single-post h1{
+    margin: 0 0 20px 0;
+    font-size: 32px;
+}
+
+#main .single-post article{
+    padding: 20px;
+}
+
+.comments .avatar{
+    float:left;
+}
+
+.avatar img{
+    width: 60px;
+    margin-right: 20px;
+}
+
+.comments .name-and-text{
+    float: left;
+    width: 525px;
+}
+
+.comments{
+    margin-top: 50px;
+}
+
+p{
+    margin: 0 0 20px;
+}
+
+#main .single-post .single-comment{
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ebebeb;
+    padding: 10px 0;
+}
+
+h3.add-comment{
+    margin-top: 50px; 
+}
+
+.comments label{
+    display: inline-block;
+    width: 100px;
+}
+
+form input{
+    width: 300px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid #dedede;
+}
+
+form .input-row {
+    margin: 5px 0; 
+}
+
+form textarea{
+    width: 100%;
+    height: 300px;
+    font-size: 14px;
+    border: 1px solid #dedede;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+form input[type=submit]{
+    font-size: 20px;
+    color: #5c5c5c;
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,f7f7f7+3,5c5c5c+99 */
+    background: #1e5799; /* Old browsers */
+    background: -moz-linear-gradient(top,  #1e5799 0%, #f7f7f7 3%, #5c5c5c 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #1e5799 0%,#f7f7f7 3%,#5c5c5c 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #1e5799 0%,#f7f7f7 3%,#5c5c5c 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#5c5c5c',GradientType=0 ); /* IE6-9 */
+
+}
+
+form input[type=submit]:hover{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#5c5c5c+1,f7f7f7+97,1e5799+100 */
+    background: #5c5c5c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #5c5c5c 1%, #f7f7f7 97%, #1e5799 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #5c5c5c 1%,#f7f7f7 97%,#1e5799 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #5c5c5c 1%,#f7f7f7 97%,#1e5799 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c5c5c', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/* 
+    css for Contact page
+*/
+
+.contact{
+    background: white;
+    padding: 20px;
+}
+
+.contact form{
+    float: left;
+    width: 600px;
+    margin-right: 50px; 
+}
+
+.contact address{
+    float: right;
+}
+
+.company{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.contact form input{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact address a{
+    color: #158ebf;
+}

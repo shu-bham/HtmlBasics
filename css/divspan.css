@@ -1,0 +1,64 @@
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+    background: #f3f5dd;
+    min-height: 1500px;
+    position: relative;
+}
+
+.invert {
+    background: black;
+    color: #f3f5dd;
+}
+
+.inline { 
+    display: inline;
+}
+
+.block { 
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.bigger {
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+#images{
+    margin: 20px;
+}
+
+#images img {
+    float: left;
+    width: 33%;
+}
+
+.clearfix{
+    clear: both;
+    background: pink;
+}
+
+#one {
+    position: relative;
+    right: 10px;
+    top: -10px;
+}
+
+#two {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 6 ;
+}
+
+#three {
+    position: fixed;
+    z-index: 5;
+    top: 10px;
+    right: 10px;
+}

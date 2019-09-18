@@ -1,0 +1,46 @@
+body {
+    background: bisque;
+    font-size: 18px;
+}
+div {
+    width : 800px;
+    margin: auto;
+}
+
+p {
+    font-size: 1em;
+    line-height: 25px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: green;
+}
+
+h2, i {
+    color: magenta;
+}
+
+h6 {
+    margin-bottom: 5px;
+}
+
+img {
+    width: 100%;
+}
+
+s {
+    color: silver;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+    text-decoration: underline;
+}

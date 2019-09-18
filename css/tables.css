@@ -1,0 +1,159 @@
+body {
+    background: #ababab;
+    margin: 0;
+}
+
+#wrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+table {
+    border: 2px solid black;
+    margin: 20px 0;
+
+}
+
+table tr td,
+table tr th {
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+table tr:last-child td,
+#timetable tr:last-child td {
+    border-bottom: none;
+}
+
+table tr td:last-child,
+table tr th:last-child,
+table#timetable tr td:last-child,
+table#timetable tr th:last-child {
+    border-right: none;
+}
+
+.win {
+    background: green;
+}
+
+.loss {
+    background: red;
+}
+
+.draw {
+    background: yellow;
+}
+
+#MO td {
+    background: green;
+}
+
+#TU td {
+    background: yellow;
+}
+
+#timetable tr td,
+#timetable tr th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.no-border {
+    border:none;
+}
+
+#timetable table{ 
+    margin: 0;
+}
+
+#MO td:first-child{
+    font-weight: bold;
+}
+
+#TU td:first-child{
+    font-style: italic;
+}
+
+#MO .no-border td{
+    font-weight: normal;
+}
+
+.lists ul {
+    list-style: disc;
+    /* list-style-position: inside; */
+    list-style-image: url(../img/favorites2_add.png);
+}
+
+.lists ul li{
+    border: 1px solid black;
+}
+
+.lists ul li:last-child{
+    color: greenyellow;
+}
+
+nav{
+    width: 980px;
+    margin:0 auto;
+    /* background: cyan; */
+}
+
+nav ul{
+    margin: 0;
+    padding-left: 0;
+}
+
+nav ul li{
+    float: left;
+    list-style: none ;
+    position: relative;
+    border-right: 2px solid black;
+}
+
+nav ul li:last-child{
+    border-right: none;
+}
+
+.clearfix{
+    clear: both ;
+}
+
+header{
+    background: skyblue; 
+    padding: 10px 0;
+}
+
+nav ul li a{
+    color: deeppink;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav ul li a:hover{
+    background: deeppink;
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul ul{
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: inline;
+}
+
+nav ul ul{
+    /* width: 150px; */
+    position: absolute;
+    top: 28px ;
+    background: skyblue;
+}
+
+nav ul ul li a{
+    /* border: none; */
+    display: inline;
+    width: 150px;
+}
