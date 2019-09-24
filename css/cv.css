@@ -17,14 +17,24 @@ section{
     margin: 0 auto;
 }
 
-.title{
-    /* width: 300px;
-    margin: auto; */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+/* .title{
+    width: 300px;
+    margin: auto;
+} */
 
 .layer{
     height: 500px;
     max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
     /* color: white; */
 }
 
@@ -35,7 +45,7 @@ h1{
 }
 
 #section-1{
-    background: url(../img/banner1.jpeg);
+    background-image: url(../img/banner1.jpeg);
 }
 
 #section-1 .title{
@@ -46,7 +56,7 @@ h1{
 #section-1 .skew-neg{
     margin: 100px 0 0 20%;
     border-left: 5px solid rgb(95, 1, 1);
-    /* border-right: none; */
+    border-right: none;
     border-left: 5px solid white;
 }
 
@@ -71,13 +81,12 @@ h3{
     text-align: center;
     margin: 0;
     font-style: italic;
+    font-size: 30px;
 }
 
 .h3{
     float: left;
-    width: 30%;
-    font-size: 32px;
-   
+    width: 30%;   
 }
 
 .excerpt{
@@ -87,6 +96,7 @@ h3{
 }
 
 .row{
+    width: 100%;
     float: left;
     margin-bottom: 40px;
 }
@@ -140,11 +150,370 @@ section .col p{
 }
 
 
-#about-me .row-boxes{
+#about-me .row-boxes, #projects .row-projects{
     width: 100%;
     text-align: center;
 }
 
-#about-me .box-wrapper{
+#about-me .box-wrapper, #projects .project-wrapper{
     display: inline-block;
 }
+
+#section-2{
+    background-image: url(../img/exp.jfif);
+}
+
+section::after{
+    content: '';
+    clear: both;
+    display: table;
+
+}
+
+.timeline{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 40px;
+}
+
+.timeline::before{
+    content:'';
+    width: 2px;
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.timeline .experience:nth-child(even) .timeline-body{
+    border-left: none;
+}
+
+.timeline .experience:nth-child(odd) .timeline-body{
+    border-right: none;
+}
+.timeline .experience{
+    width: 40%;
+}
+
+.timeline .experience:nth-child(even){
+    float: right;
+    padding-left: 60%;
+}
+
+.timeline .experience:nth-child(odd){
+    float: left;
+    padding-right: 60%;
+}
+
+.timeline .experience .timeline-heading{
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.timeline .experience .timeline-body{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.timeline .experience .bullet{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    border: 2px solid black;
+    left: 50%;
+    margin-left: -30px;
+    background: bisque;
+}
+
+.timeline .start-bullet{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    position : relative;
+    top : -60px;
+    font-size: 18px;
+}
+
+.timeline .start-bullet .skew-neg{
+    display:inline-block;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+#section-3{
+    background-image: url(../img/skill.webp);
+}
+
+.skill{
+    float:left;
+    width: 16.6667%;
+}
+
+.skill .pie{
+    width: 100px;
+    height: 100px;
+    background: black;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    margin: 0 auto 10px;
+}
+
+.skill .heading{
+    text-align: center;
+    font-size: 18px;
+}
+
+.skill .pie-80{
+    background-image: linear-gradient(18deg,black 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+.skill .pie-70{
+    background-image: linear-gradient(-18deg,black 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+.skill .pie-35{
+    background-image: linear-gradient(36deg,bisque 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+.skill .pie-95{
+    background-image: linear-gradient(72deg,black 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+.skill .pie-90{
+    background-image: linear-gradient(54deg,black 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+.skill .pie-60{
+    background-image: linear-gradient(-54deg,black 50%, transparent 50%), linear-gradient(90deg,bisque 50%, transparent 50%);
+}
+
+#section-4{
+    background-image: url(../img/proj.jfif);
+}
+
+#projects .h3, #testimonials .h3{
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+#projects .h3 .skew-neg, #testimonials .h3 .skew-neg{
+    display: inline-block;
+}
+
+.project{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+    height: auto;
+    background-size: cover;
+
+}
+
+.project .caption{
+    margin-top:10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.project .name{
+    font-weight: bold;
+}
+
+.project .technology{
+    font-style: italic;
+    font-size: 16px;
+}
+
+#section-5{
+    background-image : url(../img/testi.png);
+}
+
+#testimonials .name{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#testimonials .quote{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+nav{
+    position: fixed;
+    top:50%;
+    right: 50px;
+    width: 20px;
+}
+
+nav .caption{
+    display: none;
+    background: black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    text-align: center;
+    padding: 5px;
+}
+
+nav a{
+    position: relative;
+    height: 16px;
+    width: 16px;
+    background: white;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+nav a:hover .caption{
+    display: block;
+    background: black;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+        #projects .projects-wrapper{
+            width: 840px;
+        }
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        #section-1 .skew-neg{
+            margin : 100px 0 0 10%;
+        }
+
+        .skill{
+            width: 33.33%;
+            margin-bottom: 20px;
+        }
+
+        #projects .projects-wrapper{
+            width: 560px;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        h1{
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+        .h3{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .h3 .skew-neg{
+            display: inline-block;
+        }
+
+        .excerpt, #about-me .col{
+            width: 100%;
+            padding: 0;
+        }
+
+        #about-me .img{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #about-me img{
+            width: 100%;
+        }
+
+        .box-wrapper{
+            width: 540px;
+        }
+
+        #about-me .box:first-child {
+            margin-left: 10px;
+        }
+
+        #about-me .box{
+            margin: 0 10px 20px;
+        }
+    }
+
+    @media only screen and (max-width : 667px){
+        h1{
+            font-size:34px;
+            line-height: 34px;
+        }
+
+        .box-wrapper{
+            width: 360px;
+        }
+
+        .skill{
+            width: 50%;
+        }
+        
+        #projects .projects-wrapper{
+            width: 280px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    }
